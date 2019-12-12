@@ -12,3 +12,7 @@ A script to guess the key of a result of caesar cipher encoding
 Encoding and decoding vigenère cipher
 ##### vigenereCipherGUI.py
 Encoding and decoding vigenère cipher with GUI
+<hr>
+
+##### substitutionCipher.py
+Encoding and decoding substitution cipher
