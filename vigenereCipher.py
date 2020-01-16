@@ -13,6 +13,9 @@ if word == "": print("Please enter a text"); quit()
 
 password = list(input("Passwort: ").upper())
 if password == "": print("Please enter a password"); quit()
+if len(password) >= len(word): print("using one time pad")
+else: print("not using one time pad")
+password = list("".join(password) * 1000)
 
 for index in range(len(password)):
     password[index] = ord(password[index])%26
@@ -20,7 +23,7 @@ for index in range(len(password)):
 for index in range(len(word)):
     try: v = password[index]
     except:
-        print("The password is too short")
+        print("Something went wrong")
         quit()
     x = word[index]
     if mode == "a":
